@@ -17,7 +17,7 @@ type NavActions = {
   goToHeader: () => void;
 }
 
-// Smoothly scroll to a section by element id
+// Smooth scroll helper
 const smoothScroll = (id: string, opts?: ScrollIntoViewOptions) => {
   requestAnimationFrame(() => {
     const el = document.getElementById(id)
@@ -25,8 +25,7 @@ const smoothScroll = (id: string, opts?: ScrollIntoViewOptions) => {
   })
 }
 
-// Detect if we are currently on the homepage
-// Takes into account Next.js basePath (important for GitHub Pages)
+// Detect if we are on homepage (with basePath support)
 const isOnHome = () => {
   if (typeof window === "undefined") return false
   const base = Router.basePath || ""
@@ -35,50 +34,40 @@ const isOnHome = () => {
   return homeCandidates.includes(current)
 }
 
-// Navigate to homepage if not already there
-const pushHome = async () => {
-  const base = Router.basePath || "/"
-  if (!isOnHome()) {
-    await Router.push(base)
+// Navigate to homepage and scroll after route change
+const goHomeAndScroll = async (id: string) => {
+  const handler = () => {
+    Router.events.off("routeChangeComplete", handler)
+    smoothScroll(id)
   }
+  Router.events.on("routeChangeComplete", handler)
+
+  const base = Router.basePath || "/"
+  await Router.push({ pathname: base, query: { scroll: id } })
 }
 
 export const useNavigationStore = create<NavActions>()(
   devtools(() => ({
-    // Generic scroll helper
     scrollTo: (id, opts) => smoothScroll(id, opts),
 
-    // Navigate to a section: scroll if on home, otherwise go home then scroll
     goTo: async (id) => {
       if (isOnHome()) {
         smoothScroll(id)
       } else {
-        const handler = () => {
-          Router.events.off("routeChangeComplete", handler)
-          smoothScroll(id)
-        }
-        Router.events.on("routeChangeComplete", handler)
-        await pushHome()
+        await goHomeAndScroll(id)
       }
       useUIStore.getState().closeMenuInMobile()
     },
 
-    // Special case: go to home section
     goToHome: async () => {
       if (isOnHome()) {
         smoothScroll("home-section")
       } else {
-        const handler = () => {
-          Router.events.off("routeChangeComplete", handler)
-          smoothScroll("home-section")
-        }
-        Router.events.on("routeChangeComplete", handler)
-        await pushHome()
+        await goHomeAndScroll("home-section")
       }
       useUIStore.getState().closeMenuInMobile()
     },
 
-    // Section-specific shortcuts
     goToBlog: () => useNavigationStore.getState().goTo("blog-section"),
     goToAbout: () => useNavigationStore.getState().goTo("about-section"),
     goToContact: () => useNavigationStore.getState().goTo("contact-section"),
