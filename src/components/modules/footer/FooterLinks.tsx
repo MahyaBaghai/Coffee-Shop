@@ -22,7 +22,7 @@ const FooterSectionTwo: FC = () => {
     <div className="flex flex-col max-lg:ml-3 max-lg:mr-85 max-md:mr-60 max-sm:mr-35 max-xs:mr-15 mr-0 lg:pt-22 pt-12">
       {/* Title */}
       <div className="font-PoppinsMedium text-xl font-medium text-white mb-7">
-        {t("FooterSec2Title")}
+        {t("footer.quickAccess")}
       </div>
 
       {/* Link items */}

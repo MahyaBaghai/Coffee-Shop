@@ -17,66 +17,78 @@ type NavActions = {
   goToHeader: () => void;
 }
 
+// Smoothly scroll to a section by element id
 const smoothScroll = (id: string, opts?: ScrollIntoViewOptions) => {
-  setTimeout(() => {
+  requestAnimationFrame(() => {
     const el = document.getElementById(id)
     el?.scrollIntoView({ behavior: "smooth", block: "start", ...opts })
-  }, 50)
+  })
+}
+
+// Detect if we are currently on the homepage
+// Takes into account Next.js basePath (important for GitHub Pages)
+const isOnHome = () => {
+  if (typeof window === "undefined") return false
+  const base = Router.basePath || ""
+  const current = window.location.pathname.replace(/\/+$/, "")
+  const homeCandidates = ["", base.replace(/\/+$/, "")]
+  return homeCandidates.includes(current)
+}
+
+// Navigate to homepage if not already there
+const pushHome = async () => {
+  const base = Router.basePath || "/"
+  if (!isOnHome()) {
+    await Router.push(base)
+  }
 }
 
 export const useNavigationStore = create<NavActions>()(
   devtools(() => ({
+    // Generic scroll helper
     scrollTo: (id, opts) => smoothScroll(id, opts),
 
-    // Generic goTo handler
-    goTo: (id) => {
-      if (typeof window !== "undefined" && window.location.pathname === "/") {
-        // Already on homepage → just scroll
+    // Navigate to a section: scroll if on home, otherwise go home then scroll
+    goTo: async (id) => {
+      if (isOnHome()) {
         smoothScroll(id)
       } else {
-        // Not on homepage → redirect with query
-        Router.push(`/?scroll=${id}`)
+        const handler = () => {
+          Router.events.off("routeChangeComplete", handler)
+          smoothScroll(id)
+        }
+        Router.events.on("routeChangeComplete", handler)
+        await pushHome()
       }
       useUIStore.getState().closeMenuInMobile()
     },
 
-    goToHome: () => {
-      useNavigationStore.getState().goTo("home-section")
-      Router.push("/"); // Home always goes to root
+    // Special case: go to home section
+    goToHome: async () => {
+      if (isOnHome()) {
+        smoothScroll("home-section")
+      } else {
+        const handler = () => {
+          Router.events.off("routeChangeComplete", handler)
+          smoothScroll("home-section")
+        }
+        Router.events.on("routeChangeComplete", handler)
+        await pushHome()
+      }
       useUIStore.getState().closeMenuInMobile()
     },
 
-    goToBlog: () => {
-      useNavigationStore.getState().goTo("blog-section")
-    },
-
-    goToAbout: () => {
-      useNavigationStore.getState().goTo("about-section")
-    },
-
-    goToContact: () => {
-      useNavigationStore.getState().goTo("contact-section")
-    },
-
+    // Section-specific shortcuts
+    goToBlog: () => useNavigationStore.getState().goTo("blog-section"),
+    goToAbout: () => useNavigationStore.getState().goTo("about-section"),
+    goToContact: () => useNavigationStore.getState().goTo("contact-section"),
     goToProducts: () => {
       useNavigationStore.getState().goTo("products-section")
       useUIStore.getState().closeShoppingCartInMobile()
     },
-
-    goToBestProducts: () => {
-      useNavigationStore.getState().goTo("best-products-section")
-    },
-
-    goToBanner: () => {
-      useNavigationStore.getState().goTo("banner-section")
-    },
-
-    goToAccessories: () => {
-      useNavigationStore.getState().goTo("accessories-section")
-    },
-
-    goToHeader: () => {
-      useNavigationStore.getState().goTo("head-section")
-    },
+    goToBestProducts: () => useNavigationStore.getState().goTo("best-products-section"),
+    goToBanner: () => useNavigationStore.getState().goTo("banner-section"),
+    goToAccessories: () => useNavigationStore.getState().goTo("accessories-section"),
+    goToHeader: () => useNavigationStore.getState().goTo("head-section"),
   }))
-);
+)
