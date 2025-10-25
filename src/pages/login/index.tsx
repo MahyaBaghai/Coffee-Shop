@@ -75,7 +75,7 @@ const Login: FC = () => {
   }, [message, t]);
 
   return (
-    <div className="@container min-h-[600px] w-full z-0 bg-[url(/images/body-bg.png)] relative bg-no-repeat bg-cover md:mt-35 mb-12 mt-20">
+    <div className="@container min-h-[600px] w-full z-0 bg-[url(/Coffee-Shop/images/body-bg.png)] relative bg-no-repeat bg-cover md:mt-35 mb-12 mt-20">
       {/* Light mode overlay */}
       <div className="absolute inset-0 z-0 bg-gradient-to-t from-gray-100/65 to-gray-100/65 dark:hidden"></div>
 

@@ -14,7 +14,7 @@ const DesktopMenu: React.FC = () => {
     <div className="flex gap-x-4 xl:gap-x-9 h-14">
       {/* Logo (click navigates home) */}
       <div onClick={goToHome} className="flex cursor-pointer shrink-0">
-        <img src="/images/app-logo.png" alt="Golden Coffee" />
+        <img src="/Coffee-Shop/images/app-logo.png" alt="Golden Coffee" />
       </div>
 
        {/* Navigation links + submenu */}

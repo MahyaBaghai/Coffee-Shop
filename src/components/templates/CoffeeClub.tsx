@@ -14,7 +14,7 @@ const CoffeeClub: FC = () => {
           {/* Club logo and title */}
           <div className="flex items-center gap-x-3 md:gap-x-3 lg:gap-x-5 xl:gap-x-6">
             <img
-              src="/images/club/diamond.png"
+              src="/Coffee-Shop/images/club/diamond.png"
               alt="Coffee Club"
               className="w-[68px] 2xs:w-[87px] lg:w-[110px] shrink-0  cursor-pointer"
             />

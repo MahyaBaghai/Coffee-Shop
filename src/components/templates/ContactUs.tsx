@@ -12,7 +12,7 @@ const ContactUs: FC = () => {
           {/* Contact image */}
           <div className="w-[296px] h-[305px] shrink-0">
             <img
-              src="/images/contact.png"
+              src="/Coffee-Shop/images/contact.png"
               alt="One of the best coffees"
               className="h-full w-full mx-auto"
             />
