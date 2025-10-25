@@ -1,0 +1,196 @@
+{
+  "Home": "Startseite",
+  "Shop": "Shop",
+  "Blog": "Blog",
+  "About": "Über uns",
+  "Contact": "Kontakt",
+  "Login": "Anmelden  ",
+  "Register": "Registrieren",
+  "DarkTheme": "Dunkles Design",
+  "LightTheme": "Helles Design",
+  "ShoppingCart": "Warenkorb ",
+  "Item": "Artikel",
+  "Items": "Artikel",
+  "EmptyCart": "Ihr Warenkorb ist leer ",
+  "ViewShopPage": "Shop ansehen",
+  "ViewCart": "Warenkorb ansehen ",
+  "Discount": "Rabatt",
+  "Amount": "Bestellsumme",
+  "Order": "Kaufen",
+  "ViewAll": "Alle ansehen",
+  "NotFound": "404 | Seite nicht gefunden!!!",
+  "coffeeAccessories": "Kaffeezubehör",
+  "AddToCart": "In den Warenkorb",
+
+  "header": {
+    "title": "Tansania Arabica Kaffee",
+    "subTitle": "Eine perfekt ausgewogene Tasse!",
+    "description": "Sie haben sicher schon von Arabica gehört. eine der bekanntesten Kaffeesorten, die in verschiedenen Regionen des Kaffeegürtels angebaut wird. "
+  },
+
+  "products": {
+    "newestProducts": "Neueste Produkte",
+    "coffeeBeans": "Aus Kaffeebohnen verarbeitet",
+    "viewAllProducts": "Alle Produkte ansehen",
+    "allProducts": "Alle Produkte  ",
+    "unavailable": "Nicht verfügbar",
+    "available": "Verfügbar",
+    "productNotFound": "Produkt nicht gefunden!!!",
+    "bestSellers": "Bestseller Produkte",
+    "coffeeLoversChoice": "Die Wahl der Kaffeeliebhaber...",
+    "1": "Türkischer Kaffee Bonmano 250 Gramm, Modell 1",
+    "2": "Türkischer Kaffee Bonmano 250 Gramm, Modell 2",
+    "3": "Türkischer Kaffee Bonmano 250 Gramm, Modell 3",
+    "4": "Türkischer Kaffee Bonmano 250 Gramm, Modell 4",
+    "5": "Türkischer Kaffee Bonmano 250 Gramm, Modell 5",
+    "6": "Türkischer Kaffee Bonmano 250 Gramm, Modell 6",
+    "7": "Türkischer Kaffee Bonmano 250 Gramm, Modell 7",
+    "8": "Türkischer Kaffee Bonmano 250 Gramm, Modell 8",
+    "9": "Türkischer Kaffee Bonmanu 350 Gramm, Noresca, Modell 1",
+    "10": "Türkischer Kaffee Bonmanu 350 Gramm, Noresca, Modell 2",
+    "11": "Türkischer Kaffee Bonmanu 350 Gramm, Noresca, Modell 3",
+    "12": "Türkischer Kaffee Bonmanu 350 Gramm, Noresca, Modell 4",
+    "13": "Türkischer Kaffee Bonmanu 350 Gramm, Noresca, Modell 5",
+    "14": "Türkischer Kaffee Bonmanu 350 Gramm, Noresca, Modell 6",
+    "15": "Türkischer Kaffee Bonmanu 350 Gramm, Noresca, Modell 7"
+  },
+
+  "categoryBanner": {
+    "coffeeTypes": "Kaffeesorten",
+    "blendsAndSingleOrigin": "Mischungen & Single Origin",
+    "instantPowders": "Instantpulver",
+    "nescafeHotChocolateMasala": "Nescafé, Heiße Schokolade & Masala"
+  },
+
+  "categoryItems": {
+    "brewAndEspresso": "Filter & Espresso Kaffee",
+    "accessories": "Zubehör & Geräte",
+    "coffeeTasterPack": "Kaffee Probierpaket",
+    "turkishCoffee": "Türkischer Kaffee",
+    "espressoMachine": "Espressomaschine"
+  },
+
+  "club": {
+    "coffeeClub": "Kaffeeclub",
+    "pointsInfo": "Wussten Sie, dass Sie mit Ihren Punkten Kaffee kaufen können?",
+    "spinWheel": "Glücksrad",
+    "missions": "Missionen",
+    "rewards": "Prämien",
+    "yourPoints": "Ihre Punkte",
+    "claimReward": "Einlösen"
+  },
+
+  "blog": {
+    "readables": "Lesenswerte Artikel",
+    "viewAllPosts": "Alle Beiträge ansehen",
+    "read": "Lesen",
+    "post1": "Kaffeezubereitung mit der AeroPress",
+    "post2": "Ein energiegeladener, kalorienreicher Start in den Tag",
+    "post3": "Zubereitung einer Tasse brasilianischem Café Zino",
+    "post4": "Dalgona-Kaffee für die Corona-Zeit"
+  },
+
+  "month": {
+    "3": "März",
+    "4": "April",
+    "5": "Mai",
+    "6": "Juni"
+  },
+
+  "contact": {
+    "title": "Einer der besten Kaffees!",
+    "subTitle": "Beste Kaffeequalität – unser Versprechen",
+    "description": "Spüre die Wärme unseres gemütlichen Cafés – ein Ort, an dem jeder aromatischen Kaffee entdecken und unsere köstlichen Desserts genießen kann, perfekt kombiniert mit heißem Kaffee. Unser stilvolles Ambiente und freundliches Team machen deinen Tag besonders!",
+    "phoneOrder": "Telefonisch bestellen"
+  },
+
+  "service": {
+    "supportTitle": "Immer erreichbar",
+    "support": "24/7 Support",
+    "expressTtile": "Expressversand",
+    "express": "Schneller Versand",
+    "roastTitle": "Spezialröstung",
+    "roast": "Frisch & hochwertig",
+    "accessoriesTitle": "Zubehör",
+    "accessories": "Brühset"
+  },
+
+  "footer": {
+    "mission": "Wir streben danach, in Produktion, Qualität, Service und Vertrieb führend zu sein – als Vorbild für iranische Hersteller und kulturelle Referenz für Kaffee im Iran. Wir glauben, dass sich die Wahrnehmung iranischer Produkte verbessern sollte, und setzen uns mit Leidenschaft dafür ein.",
+    "quickAccess": "Schnellzugriff",
+    "privacyPolicy": "Datenschutz",
+    "returnPolicy": "Rückgabe",
+    "termsOfUse": "AGB",
+    "placeOrder": "Bestellen",
+    "faq": "FAQ",
+    "careers": "Karriere",
+    "imprint": "Impressum",
+    "contactUs": "Kontakt",
+    "stayInTouch": "Bleiben Sie in Kontakt",
+    "address": "4 Shariatiestraße, Motahari Boulevard, Rasht.",
+    "copyright": "Copyright © 2025 Golden Coffee. Alle Rechte vorbehalten.",
+    "uiRights": "Alle UI-Rechte liegen bei "
+  },
+
+  "features": {
+    "attributes": "Produkteigenschaften",
+    "name": {
+      "variety": "Sorte",
+      "caffeineContent": "Koffeingehalt",
+      "origin": "Herkunft",
+      "ingredients": "Zutaten",
+      "energyPerSachet": "Energie pro Sachet",
+      "grindSize": "Mahlgrad",
+      "quantityPerPack": "Anzahl pro Packung",
+      "sugarPerSachet": "Zucker pro Sachet",
+      "weightPerSachet": "Gewicht pro Sachet",
+      "madeIn": "Hergestellt in"
+    },
+    "value": {
+      "arabica": "100% Arabica",
+      "robusta": "80% Arabica, 20% Robusta",
+      "low": "Niedrig",
+      "medium": "Mittel bis niedrig",
+      "africaAndAsia": "Afrika & Asien",
+      "coffeeBeans": "Kaffeebohnen",
+      "groundCoffee": "Gemahlener Kaffee",
+      "espressoGroundCoffee": "Gemahlener Espresso",
+      "kcal34": "34 kcal",
+      "kcal72": "72 kcal",
+      "kcal75": "75 kcal",
+      "fine": "Fein",
+      "sachets24": "24 Sachets",
+      "gram0": "0 g",
+      "gram3": "3.5 g",
+      "gram16": "16 g",
+      "Turkiye": "Türkei"
+    }
+  },
+
+  "login": {
+    "enterEmail": "E-Mail-Adresse",
+    "enterPassword": "Passwort",
+    "confirmPassword": "Passwort bestätigen",
+    "emailRequired": "E-Mail ist erforderlich",
+    "emailInvalid": "Ungültiges E-Mail-Format",
+    "userNotExist": "Benutzer nicht gefunden, bitte registrieren",
+    "emailExists": "E-Mail wird bereits verwendet",
+    "emailValidationFailed": "E-Mail-Überprüfung fehlgeschlagen",
+    "passwordRequired": "Passwort ist erforderlich",
+    "passwordMin": "Das Passwort muss mindestens 6 Zeichen lang sein",
+    "confirmPasswordRequired": "Bitte Passwort bestätigen",
+    "passwordsMustMatch": "Passwörter stimmen nicht überein",
+    "passwordEmpty": "Passwort darf nicht leer sein",
+    "welcomeBack": "Willkommen zurück",
+    "passwordIncorrect": "Falsches Passwort",
+    "unexpectedError": "Etwas ist schiefgelaufen. Bitte erneut versuchen.",
+    "failedCreateUser": "Benutzer konnte nicht erstellt werden",
+    "accountCreated": "Konto erfolgreich erstellt",
+    "signupFailed": "Registrierung fehlgeschlagen. Bitte erneut versuchen.",
+    "or": "Oder",
+    "signinGoogle": "Mit Google anmelden",
+    "donotAccount": "Noch kein Konto?",
+    "alreadyAccount": "Schon ein Konto?",
+    "googleNotAvailable": "Die Anmeldung mit Google ist derzeit nicht verfügbar. Bitte erstellen Sie ein Konto."
+  }
+}

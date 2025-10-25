@@ -1,0 +1,196 @@
+{
+  "Home": "Home",
+  "Shop": "Shop",
+  "Blog": "Blog",
+  "About": "About Us",
+  "Contact": "Contact Us",
+  "Login": "Login ",
+  "Register": "Sign Up",
+  "DarkTheme": "Dark Mode",
+  "LightTheme": "Light Mode",
+  "ShoppingCart": "Shopping Cart ",
+  "Item": "Item",
+  "Items": "Items",
+  "EmptyCart": "Your cart is empty ",
+  "ViewShopPage": "View Shop",
+  "ViewCart": "View Cart ",
+  "Discount": "Discount ",
+  "Amount": "Total Amount",
+  "Order": "Buy Now",
+  "ViewAll": "View All",
+  "NotFound": "404 | Page not found!!!",
+  "coffeeAccessories": "Coffee Accessories",
+  "AddToCart": "Add to cart",
+
+  "header": {
+    "title": "Tanzanian Arabica Coffee",
+    "subTitle": "A perfectly balanced cup!",
+    "description": "You’ve probably heard of Arabica. one of the most renowned coffee varieties, cultivated across the coffee belt regions. "
+  },
+
+  "products": {
+    "newestProducts": "Newest Products",
+    "coffeeBeans": "Crafted from Coffee Beans",
+    "viewAllProducts": "View All Products",
+    "allProducts": "All Products ",
+    "unavailable": "Unavailable",
+    "available": "Available",
+    "productNotFound": "Product not found!!!",
+    "bestSellers": "Best Selling Products",
+    "coffeeLoversChoice": "Coffee Lovers' Choice...",
+    "1": "Turkish coffee Bonmano 250 grams, model 1",
+    "2": "Turkish coffee Bonmano 250 grams, model 2",
+    "3": "Turkish coffee Bonmano 250 grams, model 3",
+    "4": "Turkish coffee Bonmano 250 grams, model 4",
+    "5": "Turkish coffee Bonmano 250 grams, model 5",
+    "6": "Turkish coffee Bonmano 250 grams, model 6",
+    "7": "Turkish coffee Bonmano 250 grams, model 7",
+    "8": "Turkish coffee Bonmano 250 grams, model 8",
+    "9": "Turkish coffee Bonmano 350 grams, Noresca, model 1",
+    "10": "Turkish coffee Bonmano 350 grams, Noresca, model 2",
+    "11": "Turkish coffee Bonmano 350 grams, Noresca, model 3",
+    "12": "Turkish coffee Bonmano 350 grams, Noresca, model 4",
+    "13": "Turkish coffee Bonmano 350 grams, Noresca, model 5",
+    "14": "Turkish coffee Bonmano 350 grams, Noresca, model 6",
+    "15": "Turkish coffee Bonmano 350 grams, Noresca, model 7"
+  },
+
+  "categoryBanner": {
+    "coffeeTypes": "Coffee Varieties",
+    "blendsAndSingleOrigin": "Blends & Single Origin",
+    "instantPowders": "Instant Powders",
+    "nescafeHotChocolateMasala": "Nescafé, Hot Chocolate & Masala"
+  },
+
+  "categoryItems": {
+    "brewAndEspresso": "Brew & Espresso Coffee",
+    "accessories": "Accessories & Equipment",
+    "coffeeTasterPack": "Coffee Taster Pack",
+    "turkishCoffee": "Turkish Coffee",
+    "espressoMachine": "Espresso Machine"
+  },
+
+  "club": {
+    "coffeeClub": "Coffee Club",
+    "pointsInfo": "Did you know you can buy coffee with your points?",
+    "spinWheel": "Spin & Win",
+    "missions": "Missions",
+    "rewards": "Rewards",
+    "yourPoints": "Your Points",
+    "claimReward": "Claim"
+  },
+
+  "blog": {
+    "readables": "Featured Reads",
+    "viewAllPosts": "View All Posts",
+    "read": "Read",
+    "post1": "How to Brew Coffee with an AeroPress",
+    "post2": "An Energizing, High-Calorie Drink to Start Your Day",
+    "post3": "How to Make a Cup of Brazilian Café Zino",
+    "post4": "Dalgona Coffee Recipe for Corona Days"
+  },
+
+  "month": {
+    "3": "March",
+    "4": "April",
+    "5": "May",
+    "6": "June"
+  },
+
+  "contact": {
+    "title": "One of the Finest Coffees!",
+    "subTitle": "Expect Premium Coffee Quality from Us",
+    "description": "Feel the warmth of our cozy space, where everyone can discover aromatic coffee and enjoy our delicious desserts perfectly paired with a hot brew. Our stylish interior and friendly staff will brighten your day!",
+    "phoneOrder": "Order by Phone"
+  },
+
+  "service": {
+    "supportTitle": "Always Available",
+    "support": "24/7 Support",
+    "expressTtile": "Express Delivery",
+    "express": "Fast Shipping",
+    "roastTitle": "Specialty Roast",
+    "roast": "Fresh & Quality",
+    "accessoriesTitle": "Accessories",
+    "accessories": "Brewing Gear"
+  },
+
+  "footer": {
+    "mission": "We strive to lead in coffee production, quality, service, and distribution — becoming a model for Iranian producers and a cultural reference for coffee in Iran. We believe the perception of Iranian products deserves to rise, and we pursue this with passion.",
+    "quickAccess": "Quick Access",
+    "privacyPolicy": "Privacy Policy",
+    "returnPolicy": "Return Policy",
+    "termsOfUse": "Terms",
+    "placeOrder": "Place Order",
+    "faq": "FAQ",
+    "careers": "Careers",
+    "imprint": "Imprint",
+    "contactUs": "Contact Us",
+    "stayInTouch": "Stay in Touch",
+    "address": "No. 4, Shariatie St., Motahari Blvd, Rasht.",
+    "copyright": "Copyright © 2025 Golden Coffee. All rights reserved.",
+    "uiRights": "All UI rights belong to "
+  },
+
+  "features": {
+    "attributes": "Product Features",
+    "name": {
+      "variety": "Variety",
+      "caffeineContent": "Caffeine Content",
+      "origin": "Origin",
+      "ingredients": "Ingredients",
+      "energyPerSachet": "Energy per Sachet",
+      "grindSize": "Grind Size",
+      "quantityPerPack": "Quantity per Pack",
+      "sugarPerSachet": "Sugar per Sachet",
+      "weightPerSachet": "Weight per Sachet",
+      "madeIn": "Made in"
+    },
+    "value": {
+      "arabica": "100% Arabica",
+      "robusta": "80% Arabica, 20% Robusta",
+      "low": "Low",
+      "medium": "Medium to Low",
+      "africaAndAsia": "Africa & Asia",
+      "coffeeBeans": "Coffee Beans",
+      "groundCoffee": "Ground Coffee",
+      "espressoGroundCoffee": "Espresso Ground Coffee",
+      "kcal34": "34 kcal",
+      "kcal72": "72 kcal",
+      "kcal75": "75 kcal",
+      "fine": "Fine",
+      "sachets24": "24 Sachets",
+      "gram0": "0 g",
+      "gram3": "3.5 g",
+      "gram16": "16 g",
+      "Turkiye": "Türkiye"
+    }
+  },
+
+  "login": {
+    "enterEmail": "Email address",
+    "enterPassword": "Password",
+    "confirmPassword": "Confirm password",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Invalid email format",
+    "userNotExist": "User not found, please sign up",
+    "emailExists": "Email already in use",
+    "emailValidationFailed": "Email validation failed",
+    "passwordRequired": "Password is required",
+    "passwordMin": "Password must be at least 6 characters",
+    "confirmPasswordRequired": "Please confirm your password",
+    "passwordsMustMatch": "Passwords do not match",
+    "passwordEmpty": "Password cannot be empty",
+    "welcomeBack": "Welcome back",
+    "passwordIncorrect": "Incorrect password",
+    "unexpectedError": "Something went wrong. Please try again.",
+    "failedCreateUser": "Could not create user",
+    "accountCreated": "Account created successfully",
+    "signupFailed": "Sign up failed. Please try again.",
+    "or": "Or",
+    "signinGoogle": "Sign in with Google",
+    "donotAccount": "Don’t have an account?",
+    "alreadyAccount": "Already have an account?",
+    "googleNotAvailable": "Google sign-in is not available at the moment. Please create an account."
+  }
+}
