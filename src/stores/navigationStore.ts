@@ -25,25 +25,30 @@ const smoothScroll = (id: string, opts?: ScrollIntoViewOptions) => {
   })
 }
 
-// Detect if we are on homepage (with basePath support)
+// Detect if we are on homepage (accounts for basePath on prod)
 const isOnHome = () => {
   if (typeof window === "undefined") return false
-  const base = Router.basePath || ""
   const current = window.location.pathname.replace(/\/+$/, "")
-  const homeCandidates = ["", base.replace(/\/+$/, "")]
-  return homeCandidates.includes(current)
+  const base = (Router.basePath || "").replace(/\/+$/, "")
+  // homepage can be "/" locally and "/Coffee-Shop" on prod
+  return current === base || current === ""
 }
 
-// Navigate to homepage and scroll after route change
+// Always push to "/" (Next adds basePath automatically)
+const pushHome = async () => {
+  if (!isOnHome()) {
+    await Router.push({ pathname: "/" })
+  }
+}
+
+// Navigate to "/" then scroll when route change completes
 const goHomeAndScroll = async (id: string) => {
   const handler = () => {
     Router.events.off("routeChangeComplete", handler)
     smoothScroll(id)
   }
   Router.events.on("routeChangeComplete", handler)
-
-  const base = Router.basePath || "/"
-  await Router.push({ pathname: base, query: { scroll: id } })
+  await Router.push({ pathname: "/", query: { scroll: id } })
 }
 
 export const useNavigationStore = create<NavActions>()(
