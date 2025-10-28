@@ -36,41 +36,41 @@
 @font-face {
   font-family: VolkhovRegular;
   font-display: swap;
-  src: url("/Coffee-Shop/fonts/Volkhov/Volkhov-Regular.ttf") format("truetype");
+  src: url("/fonts/Volkhov/Volkhov-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: VolkhovBold;
   font-display: swap;
-  src: url("/Coffee-Shop/fonts/Volkhov/Volkhov-Bold.ttf") format("truetype");
+  src: url("/fonts/Volkhov/Volkhov-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: PoppinsRegular;
   font-display: swap;
-  src: url("/Coffee-Shop/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  src: url("/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: PoppinsMedium;
   font-display: swap;
-  src: url("/Coffee-Shop/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+  src: url("/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: PoppinsBold;
   font-display: swap;
-  src: url("/Coffee-Shop/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  src: url("/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: Tagesschrift;
   font-display: swap;
-  src: url("/Coffee-Shop/fonts/Tagesschrift/Tagesschrift-Regular.ttf") format("truetype");
+  src: url("/fonts/Tagesschrift/Tagesschrift-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: Oswald;
   font-display: swap;
-  src: url("/Coffee-Shop/fonts/Oswald/Oswald-Regular.ttf") format("truetype");
+  src: url("/fonts/Oswald/Oswald-Regular.ttf") format("truetype");
 }
 
 

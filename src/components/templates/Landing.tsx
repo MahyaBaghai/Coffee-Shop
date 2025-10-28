@@ -9,7 +9,7 @@ const Landing = () => {
     <>
       <section
         id="home-section"
-        className="@container relative max-md:mt-16 md:bg-[url(/Coffee-Shop/images/headerBgDesktop.webp)] bg-[url(/Coffee-Shop/images/headerBgMobile.webp)] bg-no-repeat bg-cover bg-center md:min-h-screen h-50 xs:aspect-2/1 xs:h-auto md:aspect-auto"
+        className="@container relative max-md:mt-16 md:bg-[url(/images/headerBgDesktop.webp)] bg-[url(/images/headerBgMobile.webp)] bg-no-repeat bg-cover bg-center md:min-h-screen h-50 xs:aspect-2/1 xs:h-auto md:aspect-auto"
       >
         {/* Header content */}
         <div className="@8xl:w-[1260px] @8xl:mx-auto @3xl:mx-10 @3xs:mx-7 md:min-h-screen xs:min-h-[300px] min-h-[200px] flex items-center overflow-hidden relative">
