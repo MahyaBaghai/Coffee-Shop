@@ -109,7 +109,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths,
-    fallback: false ,
+    fallback: "blocking" ,
   };
 };
 
@@ -129,7 +129,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
   if (productError || !product) {
     console.error(productError);
-    return { props: { product: null } };
+    return { props: { product: null }, revalidate: 60 };
   }
 
   // Fetch related attributes via join table
@@ -148,6 +148,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
         ...product,
         attributes: attributes ?? [],
       },
-    }
+    },
+    revalidate: 60 *60
   };
 };

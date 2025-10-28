@@ -79,12 +79,13 @@ export async function getStaticProps() {
 
   if (error) {
     console.error("Supabase fetch error:", error);
-    return { props: { products: [] }};
+    return { props: { products: [] , revalidate: 60 }};
   }
 
   return {
     props: {
       products: data ?? [],
-    }
+    },
+    revalidate: 60 *60
   };
 }
