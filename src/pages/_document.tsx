@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en" suppressHydrationWarning>
       <Head>
-        <link rel="icon" href="/Coffee-Shop/favicon.png" />
+        <link rel="icon" href="/favicon.png" />
         <title>Golden Coffee</title>
       </Head>
       <body className="antialiased">
