@@ -4,6 +4,14 @@
 ****Frontend Project – A responsive and high-performance online coffee store built with ***Next.js, TypeScript, and Tailwind CSS***.  
 Golden Coffee offers a modern e-commerce experience with multilingual support, dark/light themes, and authentication.****
 
+## 🔑 Test Login Credentials
+
+#### To test the login functionality, you can use the following demo account:
+
+- **Email:** example@gmail.com 
+- **Password:** 123456789
+
+
 
 ## 🚀 Features
 
@@ -51,6 +59,6 @@ Golden Coffee offers a modern e-commerce experience with multilingual support, d
    npm start
 
 ## 🌐 Demo
-### 👉 Live Demo (https://mahyabaghai.github.io/Coffee-Shop/)
+### 👉 Live Demo (https://golden-coffee-shop-kappa.vercel.app/)
 
 
