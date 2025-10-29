@@ -59,7 +59,5 @@ Golden Coffee offers a modern e-commerce experience with multilingual support, d
    npm start
 
 
-## 🌐 Demo
-### 👉 Live Demo (https://golden-coffee-shop-kappa.vercel.app/)
 
 
